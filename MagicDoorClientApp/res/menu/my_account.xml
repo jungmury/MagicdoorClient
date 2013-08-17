@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+  <item
+        android:id="@+id/myAccount"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/my_account"/>
+   <item
+        android:id="@+id/help"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom|withText"
+        android:title="Help"/>
+  
+</menu>

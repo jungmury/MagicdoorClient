@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/ btnToMyAccInfoStu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/my_account_information"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btnToMyConfirmedAppointmentHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/my_confirmed_appointment_history" />
+
+    
+    <Button
+        android:id="@+id/btnToMyRejectedAppointmentHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/my_rejected_appointment_history" />
+    
+    <Button
+        android:id="@+id/btnToSentMessages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sent_messages" />
+
+    <Button
+        android:id="@+id/btnToReceivedMessages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/received_messages" />
+
+    <Button
+        android:id="@+id/btnToLogOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/log_out" />
+
+</LinearLayout>

@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:stretchColumns="*"
+        tools:ignore="HardcodedText" >
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/time_table"
+            android:textSize="20sp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/aqua" >
+
+            <TextView android:text="" >
+            </TextView>
+
+            <TextView
+                android:gravity="center"
+                android:text="@string/mon"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+
+            <TextView
+                android:gravity="center"
+                android:text="@string/tue"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+
+            <TextView
+                android:gravity="center"
+                android:text="@string/wed"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+
+            <TextView
+                android:gravity="center"
+                android:text="@string/thu"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+
+            <TextView
+                android:gravity="center"
+                android:text="@string/fri"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/aqua" >
+
+            <TextView
+                android:background="@color/aqua"
+                android:gravity="center"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvForDateMon"
+                android:gravity="center"
+                android:text="" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvForDateTue"
+                android:gravity="center"
+                android:text="" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvForDateWed"
+                android:gravity="center"
+                android:text="" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvForDateThu"
+                android:gravity="center"
+                android:text="" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvForDateFri"
+                android:gravity="center"
+                android:text="" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <TextView
+                android:layout_height="50dp"
+                android:background="@color/aqua"
+                android:gravity="center"
+                android:text="09:00"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvSubMon09"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:lines="3"
+                android:text="" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvSubTue09"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvSubWed09"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvSubThu09"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvSubFri09"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <TextView
+                android:layout_height="50dp"
+                android:background="@color/aqua"
+                android:gravity="center"
+                android:text="10:00"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvSubMon10"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvSubTue10"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvSubWed10"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvSubThu10"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvSubFri10"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <TextView
+                android:layout_height="50dp"
+                android:background="@color/aqua"
+                android:gravity="center"
+                android:text="11:00"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvSubMon11"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvSubTue11"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvSubWed11"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvSubThu11"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvSubFri11"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <TextView
+                android:layout_height="50dp"
+                android:background="@color/aqua"
+                android:gravity="center"
+                android:text="12:00"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvSubMon12"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvSubTue12"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvSubWed12"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvSubThu12"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvSubFri12"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <TextView
+                android:layout_height="50dp"
+                android:background="@color/aqua"
+                android:gravity="center"
+                android:text="13:00"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvSubMon13"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvSubTue13"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvSubWed13"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvSubThu13"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvSubFri13"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow8"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <TextView
+                android:layout_height="50dp"
+                android:background="@color/aqua"
+                android:gravity="center"
+                android:text="14:00"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvSubMon14"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvSubTue14"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvSubWed14"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvSubThu14"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvSubFri14"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow9"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <TextView
+                android:layout_height="50dp"
+                android:background="@color/aqua"
+                android:gravity="center"
+                android:text="15:00"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvSubMon15"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvSubTue15"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvSubWed15"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvSubThu15"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvSubFri15"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow10"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <TextView
+                android:layout_height="50dp"
+                android:background="@color/aqua"
+                android:gravity="center"
+                android:text="16:00"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvSubMon16"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvSubTue16"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvSubWed16"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvSubThu16"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvSubFri16"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow11"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <TextView
+                android:layout_height="50dp"
+                android:background="@color/aqua"
+                android:gravity="center"
+                android:text="17:00"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvSubMon17"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvSubTue17"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvSubWed17"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvSubThu17"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvSubFri17"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text=""
+                tools:ignore="TooManyViews" >
+
+            </TextView>
+        </TableRow>
+    </TableLayout>
+
+</ScrollView>

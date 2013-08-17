@@ -1,0 +1,25 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme for API 14+. This theme completely replaces
+        AppBaseTheme from BOTH res/values/styles.xml and
+        res/values-v11/styles.xml on API 14+ devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+        <!-- API 14 theme customizations can go here. -->
+    </style>
+
+    <style name="Theme.MyTheme.TitleBar" parent="android:Theme.Holo.Light.NoActionBar">
+        <item name="android:windowNoTitle">false</item>
+        <!-- API 14 theme customizations can go here. -->
+        <item name="android:windowTitleBackgroundStyle">@style/windowTitleBackgroundStyle</item>
+        <item name="android:windowTitleStyle">@style/windowTitleStyle</item>
+        <item name="android:windowTitleSize">50dip</item>
+    </style>
+
+</resources>
+
+<!-- 
+     <item name="android:windowNoTitle">false</item>
+   sovled error - cannot combine custom title with other type of feature
+ -->

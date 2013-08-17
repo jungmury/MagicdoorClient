@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="magicdoor.lancs"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.NFC" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/lancs_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppBaseTheme" >
+        <activity
+            android:name="jy.kim.lancs.magicdoor.startup.StartUpActivity"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="jy.kim.lancs.magicdoor.login.LogInActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="jy.kim.lancs.magicdoor.main.LecturerMainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="jy.kim.lancs.magicdoor.account.SignUpActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="jy.kim.lancs.magicdoor.account.MyAccountInfoActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="jy.kim.lancs.magicdoor.announcement.ShowAnnouncementActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="jy.kim.lancs.magicdoor.appointment.MakeAppointmentsActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="jy.kim.lancs.magicdoor.time.PickDateAndTimeActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="jy.kim.lancs.magicdoor.appointment.ShowAppointmentActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="jy.kim.lancs.magicdoor.account.StudentMyAccountActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" >
+        </activity>
+        <activity
+            android:name="jy.kim.lancs.magicdoor.account.LecturerMyAccountActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" >
+        </activity>
+        <activity
+            android:name="jy.kim.lancs.magicdoor.appointment.ManageAppointmentListDialogActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" >
+        </activity>
+        <activity
+            android:name="jy.kim.lancs.magicdoor.timetable.TimeTableActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="jy.kim.lancs.magicdoor.timetable.ShowTimeTableActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="jy.kim.lancs.magicdoor.main.StudentMainFragmentActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="jy.kim.lancs.magicdoor.message.WriteMessageActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="jy.kim.lancs.magicdoor.message.ShowMessageActivity"
+            android:label="@string/app_name" >
+        </activity>
+
+        <!-- share uid -->
+        <service
+            android:name="jy.kim.lancs.magicdoor.service.AuthenticationService"
+            android:exported="false"
+            android:process=":auth" >
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/authenticator" />
+        </service>
+    </application>
+
+</manifest>
